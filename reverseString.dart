@@ -3,6 +3,7 @@ void main() {
 
   name = reverseAString(name);
   print(name);
+  print(greet());
 }
 
 String reverseAString(String input) {
@@ -12,4 +13,23 @@ String reverseAString(String input) {
     reversedString += input[i];
   }
   return reversedString;
+}
+
+String greet() {
+  return 'Hello World';
+}
+
+bool betterThanAverage(List<int> classPoints, int yourPoints) {
+  int sum = 0;
+
+  for (int i = 0; i < classPoints.length; i++) {
+    sum += classPoints[i];
+  }
+  double average = sum / classPoints.length;
+
+  if (average > yourPoints) {
+    return false;
+  } else {
+    return true;
+  }
 }
