@@ -33,3 +33,23 @@ bool betterThanAverage(List<int> classPoints, int yourPoints) {
     return true;
   }
 }
+
+String noSpace(String x) {
+  
+  String  withoutSpace ='';
+  
+  for (int i=0; i<x.length ; i++){
+    
+    if(x[i] != ' '){
+
+      withoutSpace+= x[i];
+    
+    }
+    
+    
+
+  }
+  
+  return withoutSpace;
+ 
+}
